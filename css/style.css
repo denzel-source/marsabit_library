@@ -1,0 +1,115 @@
+/* CSS Variables - Based on your color theme */
+:root {
+    /* Primary Colors */
+    --primary-dark: #1e3a5f;
+    --primary-medium: #4a7ba9;
+    --primary-light: #6b9bc6;
+    
+    /* Accent Colors */
+    --accent-gold: #d4af37;
+    --accent-light: #f5f5f0;
+    
+    /* Neutral Colors */
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --background: #f8f9fa;
+    
+    /* Typography */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    
+    /* Spacing */
+    --section-padding: 4rem 0;
+    --container-width: 1200px;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-gold { color: var(--accent-gold); }
+.bg-dark { background: var(--primary-dark); }
+.bg-light { background: var(--accent-light); }
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-dark);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--primary-medium);
+    margin-bottom: 2rem;
+}
+
+/* Button Styles */
+.cta-button {
+    background: var(--accent-gold);
+    color: var(--text-dark);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    background: #e6b82e;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Card Styles */
+.card {
+    background: var(--text-light);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    :root {
+        --section-padding: 2rem 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
