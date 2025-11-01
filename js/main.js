@@ -260,46 +260,45 @@ class MarsabitLibrary {
 
     async loadFooter() {
         const footerHTML = `
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer-content">
-                        <div class="footer-section">
-                            <h3>Marsabit Library</h3>
-                            <p>Ready Know Empower</p>
-                            <p>Part of Kenya National Library Service</p>
-                            <div class="social-links">
-                                <a href="#" class="social-link" aria-label="Facebook">📘</a>
-                                <a href="#" class="social-link" aria-label="Twitter">🐦</a>
-                                <a href="#" class="social-link" aria-label="Instagram">📷</a>
-                            </div>
-                        </div>
-                        <div class="footer-section">
-                            <h4>Contact Info</h4>
-                            <p>📧 knis@knis.ac.ke</p>
-                            <p>📞 +254 712 345 678</p>
-                            <p>📍 Marsabit Town Center</p>
-                        </div>
-                        <div class="footer-section">
-                            <h4>Quick Links</h4>
-                            <a href="#about">About Us</a>
-                            <a href="#services">Services</a>
-                            <a href="#collection">Book Collection</a>
-                            <a href="#visit">Visit Us</a>
-                        </div>
-                        <div class="footer-section">
-                            <h4>Newsletter</h4>
-                            <p>Stay updated with our latest news and events</p>
-                            <form class="newsletter-form">
-                                <input type="email" class="newsletter-input" placeholder="Your email" required>
-                                <button type="submit" class="newsletter-btn">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <p>&copy; 2024 Marsabit Library. All rights reserved. | Part of Kenya National Library Service</p>
-                    </div>
+           <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Marsabit Library</h3>
+                <p class="tagline">Read • Know • Empower</p>
+                <p class="affiliation">Kenya National Library Service</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
                 </div>
-            </footer>
+            </div>
+            
+            <div class="footer-actions">
+                <div class="action-buttons">
+                    <a href="#contact-section" class="action-btn">Contact Us</a>
+                    <a href="#visit-section" class="action-btn outline">Find Us</a>
+                </div>
+                
+                <div class="newsletter-compact">
+                    <p>Get updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Email" required>
+                        <button type="submit" class="newsletter-btn">→</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Marsabit Library | Kenya National Library Service</p>
+            <div class="legal-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </div>
+</footer>
         `;
         document.getElementById('footer').innerHTML = footerHTML;
     }
