@@ -97,53 +97,105 @@ class MarsabitLibrary {
     async loadHero() {
     const heroHTML = `
         <div class="hero-carousel">
-            <!-- Slide 1: Modern Library Interior -->
-            <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1568667256549-094345857637?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')">
-                <div class="slide-content">
-                    <h1>Welcome to Marsabit Library</h1>
-                    <p>Your gateway to knowledge, community, and growth in the heart of Marsabit</p>
-                    <div class="hero-cta-buttons">
-                        <button class="cta-button">Explore Library</button>
-                        <button class="cta-button secondary">Become a Member</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Slide 2: African Children Reading -->
-            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')">
-                <div class="slide-content">
-                    <h1>Children's Story Time</h1>
-                    <p>Every Saturday at 10 AM - Magical adventures await young readers!</p>
-                    <div class="hero-cta-buttons">
-                        <button class="cta-button">View Schedule</button>
-                        <button class="cta-button secondary">Learn More</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Slide 3: Science Fiction Books -->
-            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')">
-                <div class="slide-content">
-                    <h1>New Science Fiction Collection</h1>
-                    <p>Discover worlds beyond imagination with our latest arrivals</p>
-                    <div class="hero-cta-buttons">
-                        <button class="cta-button">Browse Collection</button>
-                        <button class="cta-button secondary">View New Arrivals</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="carousel-controls">
-                <button class="carousel-btn prev-btn" aria-label="Previous slide">‹</button>
-                <button class="carousel-btn next-btn" aria-label="Next slide">›</button>
-            </div>
-            
-            <div class="carousel-indicators">
-                <span class="indicator active" aria-label="Slide 1"></span>
-                <span class="indicator" aria-label="Slide 2"></span>
-                <span class="indicator" aria-label="Slide 3"></span>
+    <!-- Slide 1: Modern Library Interior -->
+    <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')">
+        <div class="slide-content">
+            <h1>Welcome to Marsabit Library</h1>
+            <p>Your gateway to knowledge, community, and growth in the heart of Marsabit</p>
+            <div class="hero-cta-buttons">
+                <button class="cta-button">Explore Library</button>
+                <button class="cta-button secondary">Become a Member</button>
             </div>
         </div>
+    </div>
+    
+    <!-- Slide 2: Digital Learning Center -->
+    <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')">
+        <div class="slide-content">
+            <h1>Digital Learning Center</h1>
+            <p>Free computer access, internet, and digital literacy programs for all ages</p>
+            <div class="hero-cta-buttons">
+                <button class="cta-button">View Services</button>
+                <button class="cta-button secondary">Book Computer</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 3: Community Events -->
+    <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')">
+        <div class="slide-content">
+            <h1>Community Events & Programs</h1>
+            <p>Join book clubs, workshops, and cultural events throughout the year</p>
+            <div class="hero-cta-buttons">
+                <button class="cta-button">See Events</button>
+                <button class="cta-button secondary">Join Club</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 4: Children's Reading -->
+    <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')">
+        <div class="slide-content">
+            <h1>Children's Story Time</h1>
+            <p>Every Saturday at 10 AM - Magical adventures await young readers!</p>
+            <div class="hero-cta-buttons">
+                <button class="cta-button">View Schedule</button>
+                <button class="cta-button secondary">Learn More</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 5: Study Spaces -->
+    <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')">
+        <div class="slide-content">
+            <h1>Quiet Study Spaces</h1>
+            <p>Comfortable areas for individual study, research, and academic work</p>
+            <div class="hero-cta-buttons">
+                <button class="cta-button">View Facilities</button>
+                <button class="cta-button secondary">Reserve Space</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 6: African Book Collection -->
+    <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')">
+        <div class="slide-content">    
+     <h1>50,000+ Books Available</h1>
+            <p>Explore our diverse collection featuring African authors and stories</p>
+            <div class="hero-cta-buttons">
+                <button class="cta-button">Browse Collection</button>
+                <button class="cta-button secondary">Search Catalog</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 7: African Cultural Heritage -->
+    <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')">
+        <div class="slide-content">
+            <h1>Local History & Culture</h1>
+            <p>Discover Marsabit's rich heritage and Kenyan cultural traditions</p>
+            <div class="hero-cta-buttons">
+                <button class="cta-button">Explore Heritage</button>
+                <button class="cta-button secondary">View Archives</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="carousel-controls">
+        <button class="carousel-btn prev-btn" aria-label="Previous slide">‹</button>
+        <button class="carousel-btn next-btn" aria-label="Next slide">›</button>
+    </div>
+    
+    <div class="carousel-indicators">
+        <span class="indicator active" aria-label="Slide 1"></span>
+        <span class="indicator" aria-label="Slide 2"></span>
+        <span class="indicator" aria-label="Slide 3"></span>
+        <span class="indicator" aria-label="Slide 4"></span>
+        <span class="indicator" aria-label="Slide 5"></span>
+        <span class="indicator" aria-label="Slide 6"></span>
+        <span class="indicator" aria-label="Slide 7"></span>
+    </div>
+</div>
     `;
     document.getElementById('hero').innerHTML = heroHTML;
 }
